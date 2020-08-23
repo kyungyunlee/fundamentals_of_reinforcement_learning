@@ -86,6 +86,8 @@ This week was an introduction to MDPs.
 
 Exceptions 
 
+* When the task doesn't meet the markov property
+
 * When there is no clear reward for every action
 * If there are no discrete "states" or stages 
 * If multiple actions lead to a reward or one action influences multiple rewards in different ways 
@@ -96,11 +98,11 @@ There is no right formula for determining the correct location of the line. It i
 
 **3.5** 
 
-$\sum_{s'}\sum_a p(s',a|s,a) $ for all $s \in S^+$ and $a \in A(s)$ when $s \neq S_T$ . 
+$\sum_{s'}\sum_a p(s',a|s,a) $ = 1 for all $s \in S^+$ and $a \in A(s)$ when $s \neq S_T$ . 
 
 In the book, $S^+$ is defined as all the states, including the terminal state. 
 
-**3.6** The return would be -1 * the discount rate ^ (steps left until failure). Therefore, if the return value is small, it means that shortly in the future, the cart will fail. 
+**3.6** The return would be $-1 * \gamma^{steps\_left\_until\_failure}$. Therefore, if the return value is small, it means that shortly in the future, the cart will fail. 
 
 **3.7** The reward is too small (it is received too far in the future) and the robot is not penalized for escaping quickly, since the reward is 0 for all situations except on escape. It would be better to assign -1 for all the steps taken. 
 

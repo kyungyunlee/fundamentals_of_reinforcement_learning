@@ -55,6 +55,8 @@
   Bellman equation expresses the current value function in terms of the future value function. 
 
   <img src="../assets/Screen Shot 2020-07-31 at 5.09.28 PM.png" width="300px"/>
+
+  
   $$
   v_\pi(s) = \sum_\pi \pi(a|s) \sum_{s',r}p(s',r|s,a)[r + \gamma v_\pi(s')]
   $$
@@ -217,4 +219,24 @@ $$
 $$
 q_\pi(s,a) = \sum_{s',r} p(s',r|s,a)[r_{t+1} + \gamma v_\pi(s')]
 $$
+
+**3.20** Draw or describe the optimal state-value function for the golf example
+
+**3.21** Draw or describe the contours of the optimal action-value function for putting, $q_*(s, putter)$ for the golf example
+
+**3.22** Consider the continuing MDP shown on to the right. The only decision
+
+**3.23**
+
+**3.24**
+
+**3.25**
+
+**3.26**
+
+**3.27**
+
+**3.28**
+
+**3.29**
 
